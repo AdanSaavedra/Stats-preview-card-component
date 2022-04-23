@@ -1,0 +1,134 @@
+:root{
+    --main-background : hsl(233, 47%, 7%); 
+    --card-background : hsl(244, 38%, 16%); 
+    --accent : hsl(277, 64%, 61%);
+    --main-heading-stats : hsl(0, 0%, 100%); 
+    --main-paragraph : hsla(0, 0%, 100%, 0.75); 
+    --stat-headings : hsla(0, 0%, 100%, 0.6); 
+}
+body{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-background);
+}
+.card{
+    width: 1100px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--card-background);
+    color: var(--main-heading-stats);
+}
+.card-adjust{
+    height: 100%;
+    border-radius: 6px;
+}
+.text-container{
+    padding: 40px 80px 40px 60px;
+}
+.first-text{
+    font-size: 38px;
+    font-weight: 700;
+    text-align: left;
+}
+.first-text span{
+    color: var(--accent);
+}
+.second-text{
+    color: var(--stat-headings);
+    line-height: 28px;
+    margin: 0;
+    padding: 0px 0px 26px 0px;
+}
+.third-text-container{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+.info-group{
+    margin: 0;
+    font-weight: 600;
+    padding-bottom: 4px;
+}
+.details-group{
+    margin: 0;
+    color: var(--stat-headings);
+    font-weight: 300;
+    font-size: small;
+    letter-spacing: 1px;
+}
+.details-group p{
+    word-spacing: 20px;
+}
+.figure-container{
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.image{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 6px 6px 0 ;
+}
+.image-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: hsla(277, 100%, 61%, 0.5);
+    border-radius: 6px;
+}
+@media(max-width: 375px){
+    .body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card{
+        width: 330px;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 100px;
+
+    }
+    .text-container{
+        padding: 20px 30px;
+        text-align: center;
+    }
+    .first-text{
+        font-size: 26px;
+        text-align: center;
+    }
+    .second-text{
+        font-size: 15px;
+    }
+    .third-text-container{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .details-group{
+        margin-bottom: 24px;
+    }
+    .last-detail{
+        margin-bottom: 0;
+    }
+    .image{
+        border-radius: 6px 6px 0 0 ;
+    }
+    .image-overlay{
+        border-radius: 6px 6px 0 0 ;
+    }
+}
