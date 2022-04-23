@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/stats-preview-card-BkbqPmZBq](https://www.frontendmentor.io/solutions/stats-preview-card-BkbqPmZBq)
+- Live Site URL: [https://adansaavedra.github.io/Stats-preview-card-component/](https://adansaavedra.github.io/Stats-preview-card-component/)
 
 ## My process
 
